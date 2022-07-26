@@ -1,0 +1,15 @@
+data class Post(
+    var id: Int,
+    val ownerId: Int,
+    val createdBy: Int,
+    val date: Long,
+    val text: String,
+    val replyPostId: Int,
+    val friendsOnly: Boolean,
+    val reposts: Reposts?,
+    val views: ViewsObject?,
+    val postType: String,
+    val attachments: Attachments?,
+    val canDelete: Boolean,
+    val canEdit: Boolean,
+)
